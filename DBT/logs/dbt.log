@@ -1,0 +1,95 @@
+[0m09:02:47.013099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a38ac8a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a5985f490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a5985f2b0>]}
+
+
+============================== 09:02:47.019423 | 2b1fab08-0e90-4542-bba7-30374c01fdfd ==============================
+[0m09:02:47.019423 [info ] [MainThread]: Running with dbt=1.8.9
+[0m09:02:47.019888 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/azuga/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:02:47.034645 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object.. Dictionary: {'dir': PosixPath('/Users/azuga/.dbt')}
+[0m09:02:47.035044 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m09:03:32.821458 [debug] [MainThread]: Starter project path: /Users/azuga/Desktop/R-C/MLE-Prep/Resources/DBT/dbt_env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m09:03:32.848828 [info ] [MainThread]: 
+Your new dbt project "f_dbt_proj" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:03:32.849448 [info ] [MainThread]: Setting up your profile.
+[0m09:55:38.569477 [info ] [MainThread]: Profile f_dbt_proj written to /Users/azuga/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:55:38.592084 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3151.6262, "process_in_blocks": "0", "process_kernel_time": 0.30541, "process_mem_max_rss": "88338432", "process_out_blocks": "0", "process_user_time": 0.968274}
+[0m09:55:38.597745 [debug] [MainThread]: Command `dbt init` succeeded at 09:55:38.596872 after 3151.64 seconds
+[0m09:55:38.601352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a38ac8a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a391b1700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a3916b610>]}
+[0m09:55:38.604163 [debug] [MainThread]: Flushing usage events
+[0m09:56:14.112702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9200a60ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91d0172460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91d0172280>]}
+
+
+============================== 09:56:14.125618 | 3be2c2f4-6a9f-4761-aa28-5c0c56f25aa6 ==============================
+[0m09:56:14.125618 [info ] [MainThread]: Running with dbt=1.8.9
+[0m09:56:14.126099 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/azuga/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:14.198214 [info ] [MainThread]: dbt version: 1.8.9
+[0m09:56:14.198644 [info ] [MainThread]: python version: 3.9.7
+[0m09:56:14.198931 [info ] [MainThread]: python path: /Users/azuga/Desktop/R-C/MLE-Prep/Resources/DBT/dbt_env/bin/python
+[0m09:56:14.199197 [info ] [MainThread]: os info: macOS-10.16-x86_64-i386-64bit
+[0m09:56:16.390543 [info ] [MainThread]: Using profiles dir at /Users/azuga/.dbt
+[0m09:56:16.390987 [info ] [MainThread]: Using profiles.yml file at /Users/azuga/.dbt/profiles.yml
+[0m09:56:16.391473 [info ] [MainThread]: Using dbt_project.yml file at /Users/azuga/Desktop/R-C/MLE-Prep/Resources/DBT/dbt_project.yml
+[0m09:56:16.398628 [info ] [MainThread]: adapter type: snowflake
+[0m09:56:16.398962 [info ] [MainThread]: adapter version: 1.8.4
+[0m09:56:16.399628 [info ] [MainThread]: Configuration:
+[0m09:56:16.399922 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:56:16.400177 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:56:16.400431 [info ] [MainThread]: Required dependencies:
+[0m09:56:16.400906 [debug] [MainThread]: Executing "git --help"
+[0m09:56:16.557641 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:56:16.558441 [debug] [MainThread]: STDERR: "b''"
+[0m09:56:16.558742 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:56:16.559043 [info ] [MainThread]: Connection:
+[0m09:56:16.559335 [info ] [MainThread]:   account: kzgnbpz-cl10762
+[0m09:56:16.559553 [info ] [MainThread]:   user: JAYDS1999
+[0m09:56:16.559755 [info ] [MainThread]:   database: SLEEKMART_OMS
+[0m09:56:16.559955 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m09:56:16.560153 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m09:56:16.560353 [info ] [MainThread]:   schema: L3_CONSUMPTION
+[0m09:56:16.560553 [info ] [MainThread]:   authenticator: None
+[0m09:56:16.560750 [info ] [MainThread]:   oauth_client_id: None
+[0m09:56:16.560946 [info ] [MainThread]:   query_tag: None
+[0m09:56:16.561146 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:56:16.561344 [info ] [MainThread]:   host: None
+[0m09:56:16.561540 [info ] [MainThread]:   port: None
+[0m09:56:16.561737 [info ] [MainThread]:   proxy_host: None
+[0m09:56:16.561934 [info ] [MainThread]:   proxy_port: None
+[0m09:56:16.562128 [info ] [MainThread]:   protocol: None
+[0m09:56:16.562321 [info ] [MainThread]:   connect_retries: 1
+[0m09:56:16.562515 [info ] [MainThread]:   connect_timeout: None
+[0m09:56:16.562709 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:56:16.562905 [info ] [MainThread]:   retry_all: False
+[0m09:56:16.563097 [info ] [MainThread]:   insecure_mode: False
+[0m09:56:16.563289 [info ] [MainThread]:   reuse_connections: None
+[0m09:56:16.563835 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m09:56:16.749978 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:56:16.751149 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:56:16.751499 [debug] [MainThread]: On debug: select 1 as id
+[0m09:56:16.751801 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:56:17.995890 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.243 seconds
+[0m09:56:17.998656 [debug] [MainThread]: On debug: Close
+[0m09:56:18.212981 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:56:18.214744 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:56:18.215514 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/azuga/Desktop/R-C/MLE-Prep/Resources/DBT/dbt_project.yml> not found
+
+[0m09:56:18.221312 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.234456, "process_in_blocks": "0", "process_kernel_time": 0.628531, "process_mem_max_rss": "120467456", "process_out_blocks": "0", "process_user_time": 1.972961}
+[0m09:56:18.223381 [debug] [MainThread]: Command `dbt debug` failed at 09:56:18.222902 after 4.24 seconds
+[0m09:56:18.225047 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:56:18.226027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9200a60ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91a0377250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92023387f0>]}
+[0m09:56:18.227478 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,38 @@
+sources:
+  - name: landing
+    description: "{{doc('__dbtutils__')}}"
+    database: SLEEKMART_OMS
+    schema: L1_LANDING
+    freshness:
+      warn_after: {count: 1000, period: day}
+      error_after: {count: 10000, period: day}
+    loaded_at_field: Updated_at
+
+    tables:
+      - name: cust 
+        identifier: customers
+        
+      - name: ordr
+        description: "{{doc('StatusCD')}}"
+        identifier: orders
+      - name: ordritms
+        identifier: orderitems
+      - name: emp
+        identifier: employees
+        columns:
+          - name: address
+            tests:
+              - not_null
+              - string_not_empty
+
+  - name: training
+    description: "This is a Training Schema's Source Configuration"
+    database: SLEEKMART_OMS
+    schema: TRAINING
+    tables:
+      - name: sales_us
+        identifier: sales_us
+      - name: sales_uk
+        identifier: sales_uk
+    
+

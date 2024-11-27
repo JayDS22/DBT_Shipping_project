@@ -1,0 +1,28 @@
+version: 2
+
+models: 
+  - name: customers_stg
+    columns:
+      - name: Email
+        tests: 
+          - string_not_empty
+  
+  - name: orders_stg
+    columns:
+      - name: OrderID
+        tests: 
+          - unique
+          - not_null
+      
+      - name: StatusCD
+        tests: 
+          - accepted_values:
+              values: ['01', '02', '03']
+  
+  - name: orderitems_stg
+    columns:
+      - name: OrderID
+        tests: 
+          - relationships:
+              to: ref('orders_stg')
+              field: OrderID

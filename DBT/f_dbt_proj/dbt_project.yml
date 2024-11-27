@@ -1,0 +1,60 @@
+#[NOTE]: 'dbt_project.yml' File is the Main Archietcture 
+  #--- Consists of Project_Name, Version, Paths, Target_DBs, Model_Configurations
+  #--- DBT Models: Mostly SQL Based Transformations on Top of the Data Available 
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'f_dbt_proj'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: f_dbt_proj
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  f_dbt_proj:
+    customers_stg:
+      schema: L2_PROCESSING
+    orders_stg:
+      schema: L2_PROCESSING  
+    orderitems_stg:
+      schema: L2_PROCESSING
+    orders_fact:
+      materialized: table
+      schema: L2_PROCESSING
+    customerrevenue: 
+      materialized: table
+
+
+#[IMP-NOTE] No need to Define "materialzed: view" & "schema: L3_CONSUMPTION" as they are already default
+    
+    
+    # Config indicated by + and applies to all files under models/example/
+    # example:
+    #   +materialized: view
+      
+      
+#[NOTE]: Default O/P Materialization for DBT= VIEW (Configurable to TABLE) in 'dbt_project.yml'/ 'model_file' (in models folder)
+#-- Add `{{config(materialized='table')}}` in "Required Model" file || To Configure a Model as Table/View 
+

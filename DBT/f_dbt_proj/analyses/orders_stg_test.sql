@@ -1,0 +1,1 @@
+SELECT DISTINCT StatusCD FROM {{ref('orders_stg')}}
